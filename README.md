@@ -5,7 +5,7 @@ Repositório para armazenar anotações, estudos e projetos realizados durante o
 ## Módulos
 
 - [x] [Fundação](https://github.com/guilchaves/treinamento-goexpert/tree/main/1-Fundacao)</br>
-- [ ] [Pacotes Importantes](https://github.com/guilchaves/treinamento-goexpert/tree/main/2-Pacotes-importantes)</br>
+- [x] [Pacotes Importantes](https://github.com/guilchaves/treinamento-goexpert/tree/main/2-Pacotes-importantes)</br>
 - [ ] Context</br>
 - [ ] Banco de Dados</br>
 - [ ] Packaging</br>
