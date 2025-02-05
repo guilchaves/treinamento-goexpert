@@ -1,4 +1,4 @@
-// INFO: 5-Busca cep
+// INFO: 2.5-Busca cep
 package main
 
 import (
