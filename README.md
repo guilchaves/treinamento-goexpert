@@ -8,8 +8,8 @@ Repositório para armazenar anotações, estudos e projetos realizados durante o
 - [x] [Pacotes Importantes](https://github.com/guilchaves/treinamento-goexpert/tree/main/2-Pacotes-importantes)</br>
 - [x] [Context](https://github.com/guilchaves/treinamento-goexpert/tree/main/3-Context)</br>
 - [x] [Banco de Dados](https://github.com/guilchaves/treinamento-goexpert/tree/main/4-Banco-de-Dados)</br>
-- [x] Packaging</br>
-- [ ] Testing</br>
+- [x] [Packaging](https://github.com/guilchaves/treinamento-goexpert/tree/main/5-Packaging)</br>
+- [x] [Testing](https://github.com/guilchaves/treinamento-goexpert/tree/main/6-Testing)</br>
 - [ ] APIs</br>
 - [ ] Multithreading</br>
 - [ ] Manipulando Eventos</br>
