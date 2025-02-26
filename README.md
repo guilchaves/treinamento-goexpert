@@ -10,7 +10,7 @@ Repositório para armazenar anotações, estudos e projetos realizados durante o
 - [x] [Banco de Dados](https://github.com/guilchaves/treinamento-goexpert/tree/main/4-Banco-de-Dados)</br>
 - [x] [Packaging](https://github.com/guilchaves/treinamento-goexpert/tree/main/5-Packaging)</br>
 - [x] [Testing](https://github.com/guilchaves/treinamento-goexpert/tree/main/6-Testing)</br>
-- [ ] APIs</br>
+- [x] [APIs](https://github.com/guilchaves/treinamento-goexpert/tree/main/7-APIs/1)</br>
 - [ ] Multithreading</br>
 - [ ] Manipulando Eventos</br>
 - [ ] Módulos Privados</br>
