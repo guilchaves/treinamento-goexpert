@@ -7,13 +7,13 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/jwtauth"
 	"github.com/guilchaves/treinamento-goexpert/6-APIs/1/configs"
+	_ "github.com/guilchaves/treinamento-goexpert/6-APIs/1/docs"
 	"github.com/guilchaves/treinamento-goexpert/6-APIs/1/internal/entity"
 	"github.com/guilchaves/treinamento-goexpert/6-APIs/1/internal/infra/database"
 	"github.com/guilchaves/treinamento-goexpert/6-APIs/1/internal/infra/webserver/handlers"
+	httpSwagger "github.com/swaggo/http-swagger"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
-	httpSwagger "github.com/swaggo/http-swagger"
-	_ "github.com/guilchaves/treinamento-goexpert/6-APIs/1/docs"
 )
 
 // @title													Go Expert API Example

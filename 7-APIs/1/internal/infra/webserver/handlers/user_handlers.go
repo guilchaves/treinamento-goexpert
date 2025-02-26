@@ -29,7 +29,7 @@ func NewUserHandler(
 
 // Create user godoc
 // @Summary					Get a user JWT
-// @Description			Get a user JWT token 
+// @Description			Get a user JWT token
 // @Tags						users
 // @Accept					json
 // @Produce					json
