@@ -12,14 +12,14 @@ import (
 )
 
 type UserHandler struct {
-	UserDB       database.UserInterface
+	UserDB database.UserInterface
 }
 
 func NewUserHandler(
 	userDB database.UserInterface,
 ) *UserHandler {
 	return &UserHandler{
-		UserDB:       userDB,
+		UserDB: userDB,
 	}
 }
 
