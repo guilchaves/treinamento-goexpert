@@ -1,4 +1,4 @@
-//INFO: 2.1-Manipulacao de arquivos
+// INFO: 2.1-Manipulacao de arquivos
 package main
 
 import (

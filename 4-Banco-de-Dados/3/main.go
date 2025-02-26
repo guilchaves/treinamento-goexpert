@@ -37,9 +37,9 @@ func main() {
 	//db.Create(&category)
 
 	db.Create(&Product{
-	    Name: "PlayStation 5",
-	    Price: 500.00,
-	    CategoryID: 1,
+		Name:       "PlayStation 5",
+		Price:      500.00,
+		CategoryID: 1,
 	})
 
 	var products []Product

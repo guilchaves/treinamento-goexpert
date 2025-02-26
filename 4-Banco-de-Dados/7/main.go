@@ -31,17 +31,17 @@ func main() {
 
 	db.AutoMigrate(&Product{}, &Category{})
 
-//	category := Category{Name: "Kitchen"}
-//	db.Create(&category)
-//
-//	category2 := Category{Name: "Eletronics"}
-//	db.Create(&category2)
-//
-//	db.Create(&Product{
-//		Name:       "Microwave",
-//		Price:      60.00,
-//		Categories: []Category{category, category2},
-//	})
+	//	category := Category{Name: "Kitchen"}
+	//	db.Create(&category)
+	//
+	//	category2 := Category{Name: "Eletronics"}
+	//	db.Create(&category2)
+	//
+	//	db.Create(&Product{
+	//		Name:       "Microwave",
+	//		Price:      60.00,
+	//		Categories: []Category{category, category2},
+	//	})
 
 	var categories []Category
 	err = db.Model(&Category{}).Preload("Products").Find(&categories).Error

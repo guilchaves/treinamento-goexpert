@@ -9,10 +9,10 @@ import (
 
 func main() {
 	ctx := context.Background()
-	ctx, cancel := context.WithTimeout(ctx, 3 * time.Second)
-    defer cancel()
+	ctx, cancel := context.WithTimeout(ctx, 3*time.Second)
+	defer cancel()
 
-    bookHotel(ctx)
+	bookHotel(ctx)
 }
 
 func bookHotel(ctx context.Context) {

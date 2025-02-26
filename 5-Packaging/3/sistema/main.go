@@ -1,4 +1,4 @@
-//INFO: 5.5-Trabalhando com go mod replace
+// INFO: 5.5-Trabalhando com go mod replace
 package main
 
 /* To run localy -> Set the package to the local dir:

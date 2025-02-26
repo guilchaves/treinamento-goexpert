@@ -38,7 +38,7 @@ func main() {
 	db.Create(&category)
 
 	db.Create(&Product{
-        Name:       "The Lord of the Rings",
+		Name:       "The Lord of the Rings",
 		Price:      40.00,
 		CategoryID: 2,
 	})
@@ -50,10 +50,10 @@ func main() {
 	}
 
 	for _, category := range categories {
-        fmt.Println(category.Name, ":")
+		fmt.Println(category.Name, ":")
 		for _, product := range category.Products {
-			fmt.Println( 
-                "- ",
+			fmt.Println(
+				"- ",
 				product.Name,
 			)
 		}

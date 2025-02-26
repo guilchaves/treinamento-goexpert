@@ -21,8 +21,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	case <-time.After(5 * time.Second):
 		log.Println("Request succesfully processed")
 		w.Write([]byte("Request succesfully processed\n"))
-    case <-ctx.Done():
+	case <-ctx.Done():
 		log.Println("Request cancelled")
-        http.Error(w, "Request cancelled", http.StatusRequestTimeout)
+		http.Error(w, "Request cancelled", http.StatusRequestTimeout)
 	}
 }

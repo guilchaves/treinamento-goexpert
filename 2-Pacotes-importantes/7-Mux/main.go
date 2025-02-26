@@ -9,7 +9,7 @@ func main() {
 	//	w.Write([]byte("Hello world"))
 	//})
 	mux.HandleFunc("/", HomeHandler)
-    mux.Handle("/blog", blog{title: "My Blog"})
+	mux.Handle("/blog", blog{title: "My Blog"})
 	http.ListenAndServe(":8080", mux)
 }
 
@@ -18,9 +18,9 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 type blog struct {
-    title string
+	title string
 }
 
-func (b blog) ServeHTTP(w http.ResponseWriter, r *http.Request){
-    w.Write([]byte(b.title))
+func (b blog) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte(b.title))
 }

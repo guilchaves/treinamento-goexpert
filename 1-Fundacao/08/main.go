@@ -1,4 +1,4 @@
-//INFO: 8-Funcoes
+// INFO: 8-Funcoes
 package main
 
 import (
@@ -10,15 +10,14 @@ func main() {
 	fmt.Println(sum(1, 2))
 	fmt.Println(sum(50, 2))
 
-    value, err := split(50,0)
-    if err != nil {
-        fmt.Println(err)
-        return
-    }
+	value, err := split(50, 0)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
-    fmt.Println(value)
+	fmt.Println(value)
 }
-
 
 func sum(a, b int) (int, bool) {
 	if a+b >= 50 {

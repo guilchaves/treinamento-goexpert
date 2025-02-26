@@ -71,7 +71,6 @@ func FuzzCalculateTax(f *testing.F) {
 		if amount <= 0 && result != 0 {
 			t.Errorf("Received %f but expected 0", result)
 		}
-        
 
 	})
 }

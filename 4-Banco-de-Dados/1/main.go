@@ -55,19 +55,19 @@ func main() {
 
 	//fmt.Printf("Product: %v, possui o preço de R$%.2f\n", p.Name, p.Price)
 
-    products, err := selectFindAllProducts(db)
-    if err != nil {
-        panic(err)
-    }
+	products, err := selectFindAllProducts(db)
+	if err != nil {
+		panic(err)
+	}
 
-    for _, p := range products {
-        fmt.Printf("Product: %v, possui o preço de R$%.f\n", p.Name, p.Price)
-    }
+	for _, p := range products {
+		fmt.Printf("Product: %v, possui o preço de R$%.f\n", p.Name, p.Price)
+	}
 
-    err = deleteProductById(db, product.ID)
-    if err != nil {
-        panic(err)
-    }
+	err = deleteProductById(db, product.ID)
+	if err != nil {
+		panic(err)
+	}
 }
 
 func insertProduct(db *sql.DB, product *Product) error {
@@ -129,23 +129,23 @@ func selectFindAllProducts(db *sql.DB) ([]Product, error) {
 		if err != nil {
 			return nil, err
 		}
-        products = append(products, p)
+		products = append(products, p)
 	}
 
-    return products, nil
+	return products, nil
 }
 
 func deleteProductById(db *sql.DB, id string) error {
-    stmt, err := db.Prepare("delete from products where id = ?")
-    if err != nil {
-        return err
-    }
-    defer stmt.Close()
+	stmt, err := db.Prepare("delete from products where id = ?")
+	if err != nil {
+		return err
+	}
+	defer stmt.Close()
 
-    _, err = stmt.Exec(id)
-    if err != nil {
-        return err
-    }
+	_, err = stmt.Exec(id)
+	if err != nil {
+		return err
+	}
 
-    return nil
+	return nil
 }

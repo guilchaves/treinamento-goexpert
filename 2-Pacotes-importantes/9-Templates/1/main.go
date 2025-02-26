@@ -15,9 +15,9 @@ func main() {
 	class := Class{"Go", 40}
 	temp := template.New("ClassTemplate")
 	temp, _ = temp.Parse("Curso de {{.Name}} com duração de {{.Duration}} horas\n")
-    err := temp.Execute(os.Stdout, class)
-    if err != nil {
-        panic(err)
-    }
+	err := temp.Execute(os.Stdout, class)
+	if err != nil {
+		panic(err)
+	}
 
 }

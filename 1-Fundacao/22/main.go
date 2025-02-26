@@ -7,15 +7,15 @@ func main() {
 		println(i)
 	}
 
-    nums := []string{"one", "two", "three", "four", "five"}
-    for k, v := range nums {
-        println(k,v)
-    }
+	nums := []string{"one", "two", "three", "four", "five"}
+	for k, v := range nums {
+		println(k, v)
+	}
 
-    i := 0
-    for i < 10{
-        println(i)
-        i++
-    }
+	i := 0
+	for i < 10 {
+		println(i)
+		i++
+	}
 
 }

@@ -8,8 +8,8 @@ go work init ./math /.sistema
 
 */
 import (
-    "github.com/guilchaves/treinamento-goexpert/5-Packaging/4/math"
-    "github.com/google/uuid"
+	"github.com/google/uuid"
+	"github.com/guilchaves/treinamento-goexpert/5-Packaging/4/math"
 )
 
 func main() {

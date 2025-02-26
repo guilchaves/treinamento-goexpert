@@ -10,7 +10,7 @@ func main() {
 	ctx := context.Background()
 	ctx = context.WithValue(ctx, "token", "senha")
 
-    bookHotel(ctx)
+	bookHotel(ctx)
 }
 
 func bookHotel(ctx context.Context) {

@@ -1,4 +1,4 @@
-//INFO: 16-Ponteiros e structs
+// INFO: 16-Ponteiros e structs
 package main
 
 import "fmt"

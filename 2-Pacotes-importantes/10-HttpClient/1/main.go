@@ -1,4 +1,4 @@
-//INFO: 2.17-Http client com timeout
+// INFO: 2.17-Http client com timeout
 package main
 
 import (

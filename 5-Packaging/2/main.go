@@ -1,4 +1,4 @@
-//INFO: 5.4-Entendendo go mod
+// INFO: 5.4-Entendendo go mod
 package main
 
 import "github.com/google/uuid"

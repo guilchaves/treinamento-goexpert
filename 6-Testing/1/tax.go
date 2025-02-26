@@ -3,10 +3,10 @@ package tax
 import "time"
 
 func CalculateTax(amount float64) float64 {
-    if amount <= 0 {
-        return 0 
-    }
-	if amount >= 1000 && amount < 2000{
+	if amount <= 0 {
+		return 0
+	}
+	if amount >= 1000 && amount < 2000 {
 		return 10.0
 	}
 	if amount >= 2000 {
@@ -16,11 +16,11 @@ func CalculateTax(amount float64) float64 {
 }
 
 func CalculateTax2(amount float64) float64 {
-    time.Sleep(time.Millisecond)
+	time.Sleep(time.Millisecond)
 
-    if amount == 0 {
-        return 0
-    }
+	if amount == 0 {
+		return 0
+	}
 	if amount >= 1000 {
 		return 10.0
 	}

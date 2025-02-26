@@ -1,4 +1,4 @@
-//INFO: 2-Declaracao e atribuicao
+// INFO: 2-Declaracao e atribuicao
 package main
 
 const a = "This value never changes"
@@ -11,7 +11,7 @@ var (
 )
 
 func main() {
-    a := "x"
+	a := "x"
 	println(a) // x
 	println(b)
 	println(c)

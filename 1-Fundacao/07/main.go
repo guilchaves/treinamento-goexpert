@@ -1,4 +1,4 @@
-//INFO: 7-Maps
+// INFO: 7-Maps
 package main
 
 import "fmt"

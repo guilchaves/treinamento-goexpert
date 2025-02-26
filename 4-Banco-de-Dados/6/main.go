@@ -65,9 +65,9 @@ func main() {
 		fmt.Println(category.Name, ":")
 		for _, product := range category.Products {
 			fmt.Printf(
-                "- %s, SerialNumber: %s\n",  
+				"- %s, SerialNumber: %s\n",
 				product.Name,
-                product.SerialNumber.Number,
+				product.SerialNumber.Number,
 			)
 		}
 	}

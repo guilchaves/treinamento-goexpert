@@ -1,4 +1,4 @@
-//INFO: 13-Interfaces
+// INFO: 13-Interfaces
 package main
 
 import "fmt"

@@ -1,9 +1,11 @@
 package tax
 
-import ("errors")
+import (
+	"errors"
+)
 
-type Repository interface{
-    SaveTax(amount float64) error
+type Repository interface {
+	SaveTax(amount float64) error
 }
 
 func CalculateTax(amount float64) (float64, error) {
@@ -33,8 +35,8 @@ func CalculateTax2(amount float64) float64 {
 }
 
 func CalculateTaxAndSave(amount float64, repository Repository) error {
-    tax := CalculateTax2(amount)
-    repository.SaveTax(tax)
+	tax := CalculateTax2(amount)
+	repository.SaveTax(tax)
 
-    return nil
+	return nil
 }

@@ -14,16 +14,16 @@ func main() {
 	}
 
 	req.Header.Set("Accept", "application/json")
-    resp, err := c.Do(req)
-    if err != nil {
-        panic(err)
-    }
-    defer resp.Body.Close()
+	resp, err := c.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
 
-    body, err := io.ReadAll(resp.Body)
-    if err != nil {
-        panic(err)
-    }
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		panic(err)
+	}
 
-    println(string(body))
+	println(string(body))
 }

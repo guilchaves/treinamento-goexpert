@@ -13,10 +13,10 @@ type Class struct {
 
 func main() {
 	class := Class{"Go", 40}
-    t := template.Must(template.New("ClassTemplate").Parse("Curso de {{.Name}} com duração de {{.Duration}} horas\n"))
-    err := t.Execute(os.Stdout, class)
-    if err != nil {
-        panic(err)
-    }
+	t := template.Must(template.New("ClassTemplate").Parse("Curso de {{.Name}} com duração de {{.Duration}} horas\n"))
+	err := t.Execute(os.Stdout, class)
+	if err != nil {
+		panic(err)
+	}
 
 }

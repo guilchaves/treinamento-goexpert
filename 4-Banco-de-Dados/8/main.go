@@ -29,19 +29,19 @@ func main() {
 	}
 
 	db.AutoMigrate(&Product{}, &Category{})
-    //category := Category{Name: "Kitchen"}
-    //db.Create(&category)
+	//category := Category{Name: "Kitchen"}
+	//db.Create(&category)
 
 	// transaction
 	tx := db.Begin()
-    var c Category
+	var c Category
 
-    err = tx.Debug().Clauses(clause.Locking{Strength: "UPDATE"}).First(&c, 1).Error
-    if err != nil {
-        panic(err)
-    }
+	err = tx.Debug().Clauses(clause.Locking{Strength: "UPDATE"}).First(&c, 1).Error
+	if err != nil {
+		panic(err)
+	}
 
-    c.Name = "Eletronics"
-    tx.Debug().Save(&c)
-    tx.Commit()
+	c.Name = "Eletronics"
+	tx.Debug().Save(&c)
+	tx.Commit()
 }

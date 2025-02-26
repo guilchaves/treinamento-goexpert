@@ -13,7 +13,7 @@ type Product struct {
 	ID    int `gorm:"primaryKey"`
 	Name  string
 	Price float64
-    gorm.Model
+	gorm.Model
 }
 
 func main() {
@@ -74,10 +74,10 @@ func main() {
 	*/
 
 	//Update
-	    var p Product
-	    db.First(&p, 1)
-	    p.Name = "Nintendo Switch"
-	    db.Save(&p)
+	var p Product
+	db.First(&p, 1)
+	p.Name = "Nintendo Switch"
+	db.Save(&p)
 	//
 	//    var p2 Product
 	//    db.First(&p2, 3)
